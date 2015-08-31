@@ -15,6 +15,7 @@
 		439194881B77602F006243C9 /* SwappetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439194871B77602F006243C9 /* SwappetViewController.swift */; };
 		4391948C1B776AB0006243C9 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4391948B1B776AB0006243C9 /* GlobalFunctions.swift */; };
 		4391948E1B7780A0006243C9 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4391948D1B7780A0006243C9 /* ItemTableViewCell.swift */; };
+		C45F63B61B94693D007DB835 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F63B51B94693D007DB835 /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		439194871B77602F006243C9 /* SwappetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwappetViewController.swift; sourceTree = "<group>"; };
 		4391948B1B776AB0006243C9 /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		4391948D1B7780A0006243C9 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		C45F63B51B94693D007DB835 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				439194651B775E8A006243C9 /* Supporting Files */,
 				4391948B1B776AB0006243C9 /* GlobalFunctions.swift */,
 				4391948D1B7780A0006243C9 /* ItemTableViewCell.swift */,
+				C45F63B51B94693D007DB835 /* SampleData.swift */,
 			);
 			path = "design 01";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				4391948E1B7780A0006243C9 /* ItemTableViewCell.swift in Sources */,
 				439194681B775E8A006243C9 /* AppDelegate.swift in Sources */,
 				439194881B77602F006243C9 /* SwappetViewController.swift in Sources */,
+				C45F63B61B94693D007DB835 /* SampleData.swift in Sources */,
 				4391948C1B776AB0006243C9 /* GlobalFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

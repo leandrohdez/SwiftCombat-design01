@@ -11,6 +11,9 @@ import UIKit
 
 class SwappetViewController: UITableViewController {
 
+    var listOfItems = NSArray()
+    
+    
     // MARK: - LoadView
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +35,19 @@ class SwappetViewController: UITableViewController {
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         self.tableView.tableHeaderView = UIView(frame: CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 5))
         self.tableView.tableFooterView = UIView(frame: CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 5))
+        
+        // mock
+        self.loadMockedItems()
     }
-
+    
+    
+    // MARK: - Load Items
+    func loadMockedItems() {
+        self.listOfItems = NSArray(array: SampleData().loadSampleListOfItems())
+        self.tableView.reloadData()
+    }
+    
+    
     
     // MARK: - Table view data source
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -41,13 +55,20 @@ class SwappetViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 18
+        return self.listOfItems.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = ItemTableViewCell()
-        cell.performCategory(CategoryType.Home)
         
+        // item data
+        var item = self.listOfItems.objectAtIndex(indexPath.row) as! SampleItemObject
+        cell.titleLabel.text = item.name
+        cell.imageItem.image = UIImage(named: item.image)
+        cell.timeLabel.text = item.time
+        cell.amountLabel.text = item.price
+        
+        cell.performCategory(item.category)
         
         return cell
     }
