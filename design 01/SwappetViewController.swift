@@ -21,7 +21,7 @@ class SwappetViewController: UITableViewController {
         self.title = "Swappet"
         
         // Custom NavigationBar
-        self.navigationController?.navigationBar.barTintColor = UIColorFromRGB(0x009bf0)
+        self.navigationController?.navigationBar.setBackgroundImage(ImageWithColor(UIColorFromRGB(0x009bf0)), forBarMetrics: UIBarMetrics.Default)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.navigationController?.navigationBar.shadowImage = ImageWithColor(UIColorFromRGB(0x008eec))
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()

@@ -69,6 +69,9 @@ class ItemTableViewCell: UITableViewCell {
         self.amountLabel.textAlignment = NSTextAlignment.Center
         self.amountLabel.textColor = UIColor.whiteColor()
         self.amountLabel.font = UIFont.systemFontOfSize(15)
+        // para que al seleccionar se vea el contorno
+        self.amountLabel.layer.borderColor = UIColorFromRGB(0xb3becd).CGColor
+        self.amountLabel.layer.borderWidth = 1
         self.frameView.addSubview(self.amountLabel)
         
         // time
@@ -128,5 +131,14 @@ class ItemTableViewCell: UITableViewCell {
             self.categoryIcon.image = UIImage(named: "book")
         }
     }
+    
+    
+    override func setSelected(selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        
+    }
+    
+    
     
 }
