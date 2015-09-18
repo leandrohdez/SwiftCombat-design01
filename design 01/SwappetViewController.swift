@@ -62,7 +62,7 @@ class SwappetViewController: UITableViewController {
         let cell = ItemTableViewCell()
         
         // item data
-        var item = self.listOfItems.objectAtIndex(indexPath.row) as! SampleItemObject
+        let item = self.listOfItems.objectAtIndex(indexPath.row) as! SampleItemObject
         cell.titleLabel.text = item.name
         cell.imageItem.image = UIImage(named: item.image)
         cell.timeLabel.text = item.time

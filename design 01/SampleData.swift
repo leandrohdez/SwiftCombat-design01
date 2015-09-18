@@ -19,7 +19,7 @@ class SampleItemObject: NSObject {
 class SampleData: NSObject {
     
     func loadSampleListOfItems() -> NSArray {
-        var sampleList = NSMutableArray()
+        let sampleList = NSMutableArray()
         
         var item       = SampleItemObject()    // declaration
         

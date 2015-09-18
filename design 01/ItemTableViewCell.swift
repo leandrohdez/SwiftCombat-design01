@@ -81,7 +81,7 @@ class ItemTableViewCell: UITableViewCell {
         self.timeLabel.textAlignment = NSTextAlignment.Left
         self.frameView.addSubview(self.timeLabel)
         
-        var clockIcon = UIImageView(frame: CGRectMake(0, 0, 13, 13))
+        let clockIcon = UIImageView(frame: CGRectMake(0, 0, 13, 13))
         clockIcon.center = CGPointMake(10, CGRectGetHeight(self.timeLabel.frame)/2)
         clockIcon.image = UIImage(named: "clock")
         self.timeLabel.addSubview(clockIcon)
@@ -97,7 +97,7 @@ class ItemTableViewCell: UITableViewCell {
         self.frameView.addSubview(self.categoryIcon)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
