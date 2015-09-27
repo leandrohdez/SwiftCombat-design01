@@ -43,7 +43,7 @@ class ItemTableViewCell: UITableViewCell {
         self.backgroundColor = UIColorFromRGB(0xf0f2f5)
         
         // creating background area
-        self.frameView = UIView(frame: CGRectMake(6, 6, CGRectGetWidth(self.frame)-12, 86))
+        self.frameView = UIView(frame: CGRectMake(6, 6, CGRectGetWidth(UIScreen.mainScreen().bounds)-12, 86))
         self.frameView.backgroundColor = UIColor.whiteColor()
         self.frameView.layer.cornerRadius = 3
         self.frameView.clipsToBounds = true
