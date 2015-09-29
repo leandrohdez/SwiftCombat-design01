@@ -37,7 +37,7 @@ class ItemTableViewCell: UITableViewCell {
     private var categoryIcon    = UIImageView()
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String!) {
-        super.init(style: UITableViewCellStyle.Value1, reuseIdentifier: reuseIdentifier)
+        super.init(style: UITableViewCellStyle.Default, reuseIdentifier: reuseIdentifier)
         
         // background cell color
         self.backgroundColor = UIColorFromRGB(0xf0f2f5)
